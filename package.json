@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/**/*.js && npx stylelint src/**/*.scss && npx linthtml src/**/*.html",
     "optimize": "gulp images && gulp cleanimg",
-    "build": "gulp build",
-    "deploy": "gulp cleandist && gulp build && gulp pages"
+    "build": "gulp cleandist && gulp build",
+    "deploy": "npm run build && gulp pages"
   },
   "author": "",
   "license": "ISC",
